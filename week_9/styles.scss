@@ -1,0 +1,113 @@
+@import 'typography';
+@import 'icons';
+
+$sm-break: 48em;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+$font-color: white;
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: $byui-blue;
+}
+
+header a {
+  color: $font-color;
+  text-decoration: none;
+  max-width: 600px;
+}
+
+.site-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.site-banner__right {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.site-banner__left, 
+.site-banner__right {
+  background-color: $byui-blue;
+}
+
+.icon-byui-logo {
+  background-color: $body-font;
+  color: $font-color;
+  font-size: 50px;
+  padding: 10px;
+  position: absolute;
+}
+
+form, 
+h1 {
+  display: none;
+}
+
+.title h2 {
+  height: 75px;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 640px;
+}
+
+.title {
+  background-color: $med-gray;
+}
+
+h2 {
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.container ul {
+  display: none;
+  list-style: none;
+}
+
+@media only screen and (min-width: $sm-break) {
+
+
+
+}
+

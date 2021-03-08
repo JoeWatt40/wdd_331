@@ -1,0 +1,15 @@
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+
+.cd-navigation {
+    li a {
+        color: $color-4;
+
+        &:hover {
+            color: $color-1;
+        }
+    }
+}

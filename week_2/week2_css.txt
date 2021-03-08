@@ -1,0 +1,14 @@
+1) The first option is better because it is more specific and leaves out chances that you have referenced the incorrect
+    element by using the second option.
+
+2) The space makes it a descendent selector. If you use the space and if the span isn't the parent of .help it wouldn't 
+    have any effect on the HTML. 
+
+3) .help::before {
+    content: '('; 
+}
+.help::after {
+    content: ')';
+}
+
+4) title:not("fieldset3")

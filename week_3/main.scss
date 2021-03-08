@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+$pink-color: #FAEBD7;
+$header-color: #6495ED;
+$article-color: white;
+$text-underline: underline;
+$text-noline: none;
+$active-link: #DEB887;
+$link-hover: white;
+$screen-break: 900px;
+$align-right: right;
+$align-center: center;
+
+body {
+    margin: 0;
+    background-color: $pink-color;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: $header-color;
+    text-align: right;
+}
+
+header, a {
+    color: $pink-color;
+    text-decoration: $text-noline;
+    padding: 10px;
+}
+
+li, ul{
+    padding-bottom: 10px;
+    list-style: $text-noline;
+}
+
+h1, h2 {
+    font-family: "Lora", serif;
+}
+
+main {    
+    margin: 20px;
+}
+
+article {
+    background-color: $article-color;
+    box-shadow: 5px 6px lightgrey;
+}
+
+article a {
+    color: black;
+}
+
+a:active {
+    color:$active-link;
+}
+
+nav a:visited {
+    color: $pink-color;
+}
+
+nav a:hover {
+    color: $link-hover;
+}
+
+.post-content p a {
+    color: $header-color;
+}
+
+.post-content p a:visited {
+    color: $header-color;
+}
+
+.post-content p a:hover {
+    text-decoration: $text-underline;
+}
+
+
+.post-date {
+    padding: 20px 20px 0px 20px;
+}
+
+.post-content a {
+    padding: 0;
+}
+
+figure {
+    text-align: center;
+}
+
+p, h2{
+    margin: 25px;
+}
+
+img {
+    padding-top: 30px;
+    width: 225px;
+    height: 275px;
+}
+
+@mixin break {
+    @media (min-width: 900px){
+        header {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 250px;
+            padding: 0;
+        }
+    
+        h1, nav {
+            padding: 30px;
+            text-align: $align-right;
+        }
+    
+        main {
+            border-left: 250px solid $header-color;   
+            margin-left: 0;     
+        }
+    
+        header, a {
+            padding-right: 0;
+        }
+    
+        hr {
+            width: 75%;
+        }
+    
+        article {
+            max-width: 600px;
+            align-items: $align-center;
+            margin: 0 auto;
+        }
+    
+        p {
+            padding: 30px;
+        }
+    
+        h2 {
+            padding-left: 30px;
+        }
+    
+        .post-date {
+            padding: 30px 30px 0px 30px;
+            margin: 20px;
+        }
+    
+    }
+}    
+
+body {
+    @include break;
+}

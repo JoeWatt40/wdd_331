@@ -1,0 +1,33 @@
+body {
+  background-color: darkred;
+}
+
+h1 {
+  color: white;
+}
+
+#contactform {
+  background-color: lightpink;
+}
+
+#contactform {
+  background-color: lightpink;
+}
+#contactform input, #contactform textarea {
+  background-color: white;
+  flex: 2;
+}
+
+#contactform fieldset {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media (min-width: 300px) {
+  #contactform fieldset div {
+    float: right;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
