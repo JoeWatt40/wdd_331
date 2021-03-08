@@ -1032,7 +1032,13 @@ img {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+}
+
+form,
+h1,
+ul {
+  display: none;
 }
 
 header {
@@ -1042,63 +1048,16 @@ header {
 header a {
   color: white;
   text-decoration: none;
-  max-width: 600px;
 }
 
 .site-banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.site-banner__right {
-  font-size: 30px;
-  padding: 10px;
-}
-
-.site-banner__left,
-.site-banner__right {
-  background-color: #056cb6;
 }
 
 .icon-byui-logo {
   background-color: #020202;
   color: white;
-  font-size: 50px;
-  padding: 10px;
-  position: absolute;
-}
-
-form,
-h1 {
-  display: none;
-}
-
-.title h2 {
-  height: 75px;
-  vertical-align: middle;
-  margin: 0 auto;
-  width: 640px;
-}
-
-.title {
-  background-color: #b4b3b5;
-}
-
-h2 {
-  padding: 20px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-}
-
-.container ul {
-  display: none;
-  list-style: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

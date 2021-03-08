@@ -36,7 +36,13 @@ img {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+}
+
+form, 
+h1, 
+ul {
+  display: none;
 }
 
 header {
@@ -46,68 +52,51 @@ header {
 header a {
   color: $font-color;
   text-decoration: none;
-  max-width: 600px;
 }
 
 .site-banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.site-banner__right {
-  font-size: 30px;
-  padding: 10px;
-}
-
-.site-banner__left, 
-.site-banner__right {
-  background-color: $byui-blue;
 }
 
 .icon-byui-logo {
   background-color: $body-font;
   color: $font-color;
-  font-size: 50px;
-  padding: 10px;
-  position: absolute;
 }
 
-form, 
-h1 {
-  display: none;
-}
+// .title h2 {
+//   height: 75px;
+//   vertical-align: middle;
+//   margin: 0 auto;
+//   width: 640px;
+// }
 
-.title h2 {
-  height: 75px;
-  vertical-align: middle;
-  margin: 0 auto;
-  width: 640px;
-}
+// .title {
+//   background-color: $med-gray;
+// }
 
-.title {
-  background-color: $med-gray;
-}
+// h2 {
+//   padding: 20px;
+// }
 
-h2 {
-  padding: 20px;
-}
+// .container {
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   grid-gap: 10px;
+// }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-}
+// .container ul {
+//   display: none;
+//   list-style: none;
+// }
 
-.container ul {
-  display: none;
-  list-style: none;
-}
+// @media only screen and (min-width: $sm-break) {
 
-@media only screen and (min-width: $sm-break) {
-
+//   body {
+//     background-color: red;
+//   }
 
 
-}
+
+// }
 
