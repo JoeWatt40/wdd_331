@@ -20,7 +20,8 @@ $font-color: white;
   box-sizing: border-box;
 }
 
-img {
+img,
+.image-small {
   max-width: 100%;
 }
 
@@ -36,12 +37,12 @@ img {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
 }
 
 form, 
 h1, 
-ul {
+.no-list {
   display: none;
 }
 
@@ -57,46 +58,74 @@ header a {
 .site-banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
 }
 
 .icon-byui-logo {
   background-color: $body-font;
   color: $font-color;
+  font-size: 50px;
+  padding: 10px;
 }
 
-// .title h2 {
-//   height: 75px;
-//   vertical-align: middle;
-//   margin: 0 auto;
-//   width: 640px;
-// }
+.site-banner__left {
+  padding: 10px 10px 10px 0;
+}
 
-// .title {
-//   background-color: $med-gray;
-// }
+.mobile-header-icon {
+  font-size: 40px;
+}
 
-// h2 {
-//   padding: 20px;
-// }
+.title {
+  height: 60px; 
+  
+  background-color: $med-gray;
+  border-bottom: 1px solid black;
+}
 
-// .container {
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   grid-gap: 10px;
-// }
+h2 {
+  margin: 0 auto;
+}
 
-// .container ul {
-//   display: none;
-//   list-style: none;
-// }
+.list, 
+.image-small {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
-// @media only screen and (min-width: $sm-break) {
+li {
+  list-style: none;
+  padding: 20px;
+}
 
-//   body {
-//     background-color: red;
-//   }
+@media only screen and (min-width: $sm-break) {
 
+  .first-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
 
+  .site-banner {
+    width: 600px;
+  }
 
-// }
+  .no-list {
+    display: block;
+    background-color: $light-gray;
+  }
 
+  .no-list li {
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .image-small {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+}
